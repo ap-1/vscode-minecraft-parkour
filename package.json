@@ -2,7 +2,7 @@
 	"name": "minecraft-parkour",
 	"displayName": "Minecraft Parkour",
 	"description": "Background Minecraft parkour to help you focus",
-	"homepage": "https://github.com/ap-1/vscode-minecraft-parkour",
+	"homepage": "https://marketplace.visualstudio.com/items?itemName=ap-1.minecraft-parkour",
 	"repository": "github:ap-1/vscode-minecraft-parkour",
 	"publisher": "ap-1",
 	"contributors": [
