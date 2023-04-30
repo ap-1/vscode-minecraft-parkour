@@ -1,0 +1,41 @@
+{
+	"name": "minecraft-parkour",
+	"displayName": "minecraft-parkour",
+	"description": "Background Minecraft parkour to help you focus",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.77.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "minecraft-parkour.overstimulate",
+				"title": "Overstimulate"
+			}
+		]
+	},
+	"scripts": {
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint src --ext ts",
+		"vscode:prepublish": "pnpm run esbuild-base -- --minify",
+		"esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
+		"esbuild": "pnpm run esbuild-base -- --sourcemap",
+		"esbuild-watch": "pnpm run esbuild-base -- --sourcemap --watch"
+	},
+	"devDependencies": {
+		"@types/node": "16.x",
+		"@types/vscode": "^1.77.0",
+		"@typescript-eslint/eslint-plugin": "^5.59.1",
+		"@typescript-eslint/parser": "^5.59.1",
+		"@vscode/test-electron": "^2.3.0",
+		"esbuild": "^0.17.18",
+		"eslint": "^8.39.0",
+		"typescript": "^5.0.4"
+	}
+}
