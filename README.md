@@ -1,6 +1,6 @@
 # VS Code Minecraft Parkour
 
-To launch this extension, run the `Overstimulate` command from the command palette (`Ctrl` + `Shift` + `P` or `⌘` + `⇧` + `P`)
+To launch this extension, run the `Overstimulate` command from the command palette (`Ctrl + Shift + P` or `⌘ + ⇧ + P`)
 
 ## What is this?
 
